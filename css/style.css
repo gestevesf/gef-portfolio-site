@@ -9,92 +9,74 @@ text color (grey for blue): rgba(187,187,187,1) #BBBBBB;
 */
 
 
-#home-page {
-  background-color: #08073F;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: 1.5;
-  color: #BBBBBB;
-}
 body {
   background-color: #ffffff;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 28px;
   font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: 1.5;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
   color: #5A5A5A;
+}
+#home-page {
+  background-color: #08073F;
+  color: #BBBBBB;
 }
 
 
 h1, h2, h3, h4 {
-  line-height: :1.4;
+  line-height: 1.5;
+  color: #08073F;
 }
 
-
-h1.home {
+#home-page h1, #home-page h2, #home-page h3, #home-page h4{
+  color: #ffffff;
+}
+#home-page h1 {
   font-family: 'Knewave', cursive;
   font-size: 2.50em;
-  color: #ffffff;
 }
-h2.home {
+#home-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 2.15em;
-  color: #ffffff;
 }
-h3.home {
+#home-page h3 {
   font-size: 1.75em;
   font-weight: 700;
-  color: #ffffff;
 }
-h4.home {
+#home-page h4 {
   font-size: 1.15em;
   font-weight: 700;
-  color: #ffffff;
 }
 
-
-h1.project {
+#project-page h1 {
   font-size: 2.15em;
   font-weight: 700;
-  color: #08073F;
 }
-h2.project {
+#project-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 2.15em;
-  color: #08073F;
 }
-h3.project {
+#project-page h3 {
   font-size: 1.15em;
   font-weight: 700;
-  color: #08073F;
 }
 
-
-h1.about {
+#about-page h1, #about-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 2.15em;
-  color: #08073F;
 }
-h2.about {
-  font-family: 'Knewave', cursive;
-  font-size: 2.15em;
-  color: #08073F;
-}
-h3.about {
+#about-page h3 {
   font-size: 1.15em;
   font-weight: 700;
-  color: #08073F;
 }
-
 
 p.vertical {
   font-size: 0.50em;
   font-weight: 300;
   writing-mode: vertical-rl;
 }
+
 
 img{
   width: 100%;
@@ -105,13 +87,20 @@ a {
   color: #08073F;
   text-decoration: none;
 }
-a:active {
-  color: #CD8354;
+a:visited {
+  color: #08073F;
 }
 a:hover,
 a:focus {
   color: #EF8354;
   text-decoration: none;
+}
+a:active {
+  color: #CD8354;
+}
+
+#home-page header a {
+  color: #ffffff;
 }
 
 
@@ -125,11 +114,10 @@ a:focus {
   border-radius: 10px;
   border: 2px solid #EF8354;
   transition: 0.4s opacity;
-  text-decoration: none;
   box-shadow: 0 3px 3px 0 rgba(239,131,84,0.5);
 }
-.button:active {
-  color: #CD8354;
+.button:visited {
+  color: #EF8354;
 }
 .button:hover {
   display: inline-block;
@@ -139,67 +127,74 @@ a:focus {
   font-weight: 700;
   padding: 10px;
   border-radius: 10px;
-  transition: 0.4s opacity;
-  text-decoration: none;
-}
-
-
-.button.contact {
-  display: inline-block;
-  background-color: #EF8354;
-  color: #08073F;
-  font-size: 0.80em;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 0.4s opacity;
-  text-decoration: none;
-  box-shadow: 0 3px 3px 0 rgba(239,131,84,0.5);
-}
-.button:active {
-  background-color: #CD8354;
-}
-.button.contact:hover {
-  display: inline-block;
-  background-color: transparent;
-  color: #EF8354;
-  font-size: 0.80em;
-  font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
   border: 2px solid #EF8354;
   transition: 0.4s opacity;
   text-decoration: none;
 }
+.button:active {
+  color: #EF8354;
+}
+
+
+.button.email {
+  background-color: #EF8354;
+  color: #08073F;
+}
+.button.email:visited {
+  background-color: #EF8354;
+  color: #08073F;
+}
+.button.email:hover {
+  background-color: transparent;
+  color: #EF8354;
+  border: 2px solid #EF8354;
+}
+.button.email:active {
+  background-color: #EF8354;
+}
 
 
 .button.resume {
-  display: inline-block;
   background-color: #EF8354;
   color: #08073F;
-  font-size: 0.80em;
-  font-weight: 400;
-  padding: 10px;
   border-color: #08073F;
-  border-radius: 10px;
-  transition: 0.2s opacity;
-  text-decoration: none;
+  box-shadow: 0 5px 5px 0 rgba(70,69,107,0.8);
+}
+.button.resume:visited {
+  background-color: #EF8354;
+  color: #08073F;
+  border-color: #08073F;
   box-shadow: 0 5px 5px 0 rgba(70,69,107,0.8);
 }
 .button.resume:hover {
   cursor: pointer;
+  font-weight: 400;
 }
 .button.resume:active {
   box-shadow: 0 1px 1px 0 rgba(2,2,22,1);
   transform: translateY(4px);
 }
 
+
 span.number {
   font-family: 'Knewave', cursive;
   font-size: 5.35em;
-  color: transparent;
-  -webkit-text-stroke: 4px;
-  -webkit-text-stroke-color: rgba(239,131,84,0.6);
+  color: #ffffff;
+  text-shadow: -4px -4px 0 rgba(239,131,84,0.6), 4px -4px 0 rgba(239,131,84,0.6), -4px 4px 0 rgba(239,131,84,0.6), 4px 4px 0 rgba(239,131,84,0.6);
+}
+span.bold {
+  color: #ffffff;
+  font-weight: 700;
+}
+span.default {
+  color: #EF8354;
+}
+span.hover {
+  color: #ffffff;
+  display: none;
 }
 
-  box-shadow: 0 5px #46456B;
+
+.desktop-menu {
+  display: none;
+}
