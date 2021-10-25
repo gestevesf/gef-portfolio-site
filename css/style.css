@@ -9,12 +9,16 @@ text color (grey for blue): rgba(187,187,187,1) #BBBBBB;
 */
 
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.3;
+  line-height: 135%;
   letter-spacing: 1.5px;
   color: #5A5A5A;
 }
@@ -25,7 +29,7 @@ body {
 
 
 h1, h2, h3, h4 {
-  line-height: 1.5;
+  line-height: 135%;
   color: #08073F;
 }
 
@@ -34,28 +38,28 @@ h1, h2, h3, h4 {
 }
 #home-page h1 {
   font-family: 'Knewave', cursive;
-  font-size: 2.50em;
+  font-size: 2.22em;
 }
 #home-page h2 {
   font-family: 'Knewave', cursive;
-  font-size: 2.15em;
+  font-size: 1.44em;
 }
 #home-page h3 {
-  font-size: 1.75em;
+  font-size: 1.44em;
   font-weight: 700;
 }
 #home-page h4 {
-  font-size: 1.15em;
+  font-size: 1.22em;
   font-weight: 700;
 }
 
 #project-page h1 {
-  font-size: 2.15em;
+  font-size: 1.44em;
   font-weight: 700;
 }
 #project-page h2 {
   font-family: 'Knewave', cursive;
-  font-size: 2.15em;
+  font-size: 1.33em;
 }
 #project-page h3 {
   font-size: 1.15em;
@@ -64,25 +68,39 @@ h1, h2, h3, h4 {
 
 #about-page h1, #about-page h2 {
   font-family: 'Knewave', cursive;
-  font-size: 2.15em;
+  font-size: 1.44em;
 }
 #about-page h3 {
-  font-size: 1.15em;
+  font-size: 1.22em;
   font-weight: 700;
 }
+
+
+nav {
+  font-size: 0.90em;
+}
+
 
 p.vertical {
   font-size: 0.50em;
   font-weight: 300;
   writing-mode: vertical-rl;
 }
+p.pre-title {
+  font-size: 0.75em;
+  font-weight: 300;
+}
 
 
+
+/* images */
 img{
   width: 100%;
 }
 
 
+
+/* links */
 a {
   color: #08073F;
   text-decoration: none;
@@ -96,7 +114,7 @@ a:focus {
   text-decoration: none;
 }
 a:active {
-  color: #CD8354;
+  color: #08073F;
 }
 
 #home-page header a {
@@ -104,11 +122,13 @@ a:active {
 }
 
 
+
+/* buttons */
 .button {
   display: inline-block;
   background-color: transparent;
   color: #EF8354;
-  font-size: 0.80em;
+  font-size: 1.22em;
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
@@ -120,16 +140,9 @@ a:active {
   color: #EF8354;
 }
 .button:hover {
-  display: inline-block;
   background-color: #EF8354;
   color: #08073F;
-  font-size: 0.80em;
   font-weight: 700;
-  padding: 10px;
-  border-radius: 10px;
-  border: 2px solid #EF8354;
-  transition: 0.4s opacity;
-  text-decoration: none;
 }
 .button:active {
   color: #EF8354;
@@ -147,7 +160,6 @@ a:active {
 .button.email:hover {
   background-color: transparent;
   color: #EF8354;
-  border: 2px solid #EF8354;
 }
 .button.email:active {
   background-color: #EF8354;
@@ -176,9 +188,14 @@ a:active {
 }
 
 
+.fa-chevron-circle-down {
+  color: #ffffff;
+}
+
+
 span.number {
   font-family: 'Knewave', cursive;
-  font-size: 5.35em;
+  font-size: 2.80em;
   color: #ffffff;
   text-shadow: -4px -4px 0 rgba(239,131,84,0.6), 4px -4px 0 rgba(239,131,84,0.6), -4px 4px 0 rgba(239,131,84,0.6), 4px 4px 0 rgba(239,131,84,0.6);
 }
@@ -198,3 +215,83 @@ span.hover {
 .desktop-menu {
   display: none;
 }
+
+
+
+
+
+/* layout styling */
+/* header styling */
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 4px 4px 1px rgba(8,7,63,0.3);
+  position: fixed;
+  width: 100%;
+}
+#home-page header {
+  background-image: url(patagonia.jpg);
+  height: 568px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+}
+
+
+.container {
+  padding: 0 30px;
+}
+
+.logo {
+  max-width: 50px;
+  margin-top: 15px;
+}
+
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+}
+
+
+
+/* main styling */
+main {
+  padding-top: 172.45px;
+}
+
+
+
+/* intro styling */
+#intro {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+/* work styling */
+.row-projects {
+  margin: 40px 0;
+}
+.row-line {
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(187,187,187,0.5);
+}
+
+
+
+/* footer styling */
