@@ -38,11 +38,13 @@ h1, h2, h3, h4 {
 }
 #home-page h1 {
   font-family: 'Knewave', cursive;
-  font-size: 2.22em;
+  font-size: 1.83em;
+  margin-bottom: 70px;
 }
 #home-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 1.44em;
+  margin: 0 0 50px 0;
 }
 #home-page h3 {
   font-size: 1.44em;
@@ -60,6 +62,7 @@ h1, h2, h3, h4 {
 #project-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 1.33em;
+  padding: 70px 0 30px 0;
 }
 #project-page h3 {
   font-size: 1.15em;
@@ -69,10 +72,12 @@ h1, h2, h3, h4 {
 #about-page h1, #about-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 1.44em;
+  margin: 0;
 }
 #about-page h3 {
   font-size: 1.22em;
   font-weight: 700;
+  margin: 0;
 }
 
 
@@ -80,15 +85,13 @@ nav {
   font-size: 0.90em;
 }
 
-
-p.vertical {
-  font-size: 0.50em;
-  font-weight: 300;
-  writing-mode: vertical-rl;
-}
 p.pre-title {
   font-size: 0.75em;
   font-weight: 300;
+}
+
+.center {
+  text-align: center;
 }
 
 
@@ -115,10 +118,6 @@ a:focus {
 }
 a:active {
   color: #08073F;
-}
-
-#home-page header a {
-  color: #ffffff;
 }
 
 
@@ -172,6 +171,7 @@ a:active {
 
 .button.resume {
   background-color: #EF8354;
+  display: inline;
   color: #08073F;
   border-color: #08073F;
   box-shadow: 0 5px 5px 0 rgba(70,69,107,0.8);
@@ -189,11 +189,6 @@ a:active {
 .button.resume:active {
   box-shadow: 0 1px 1px 0 rgba(2,2,22,1);
   transform: translateY(4px);
-}
-
-
-.fa-chevron-circle-down {
-  color: #ffffff;
 }
 
 
@@ -246,11 +241,14 @@ header {
   background-size: cover;
   position: static;
 }
+#home-page header a {
+  color: #ffffff;
+}
 
 
 .logo {
-  max-width: 50px;
-  margin-top: 15px;
+  width: 65px;
+  margin: 15px;
 }
 
 
@@ -261,6 +259,7 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 nav > ul > li {
   display: inline-block;
@@ -273,7 +272,7 @@ nav > ul > li > a {
 
 /* main styling */
 main {
-  padding-top: 172.45px;
+  padding-top: 104px;
 }
 
 #home-page main {
@@ -282,13 +281,29 @@ main {
 
 
 
-
-
 /* intro styling */
 #intro {
-  padding: 20px 0;
+  padding: 30px 0;
   display: inline-block;
   width: 100%;
+}
+
+p.junior {
+  margin-bottom: 100px;
+}
+
+p.vertical {
+  font-size: 0.50em;
+  font-weight: 300;
+  writing-mode: vertical-rl;
+  margin-left: 100%;
+}
+
+.fa-stack {
+  float: left;
+  margin-top: 100%
+  font-size: 18px;
+  color: #ffffff;
 }
 
 
@@ -304,7 +319,7 @@ main {
 
 #work {
   background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 
@@ -315,18 +330,23 @@ footer {
   background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
   color: #BBBBBB;
   width: 100%;
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 
-
-footer h2 {
+#about-page footer h2 {
   color: #ffffff;
-  padding-bottom: 40px;
+  margin-bottom: 50px;
 }
+
+#project-page footer h2 {
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
 footer .row {
   padding-bottom: 40px;
 }
-
 footer .button {
   display: inline-block;
   margin: 0 15px 15px 0;
@@ -341,3 +361,23 @@ footer .button {
 
 
 /* about-me styling */
+#about-page .section {
+  padding: 30px 0 40px 0;
+}
+
+#about-page .section .row {
+  padding-bottom: 10px;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding-bottom: 30px;
+}
+
+. {
+  list-style-type: none;
+  column-count: 2;
+}
