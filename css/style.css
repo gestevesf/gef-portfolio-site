@@ -128,13 +128,17 @@ a:active {
   display: inline-block;
   background-color: transparent;
   color: #EF8354;
-  font-size: 1.22em;
+  font-size: 1.10em;
   font-weight: 400;
   padding: 10px;
   border-radius: 10px;
   border: 2px solid #EF8354;
   transition: 0.4s opacity;
   box-shadow: 0 3px 3px 0 rgba(239,131,84,0.5);
+  text-align: center;
+  width: 140px;
+  height: 42px;
+  text-align: center;
 }
 .button:visited {
   color: #EF8354;
@@ -218,9 +222,13 @@ span.hover {
 
 
 
-
-
 /* layout styling */
+.container {
+  padding: 0 30px;
+}
+
+
+
 /* header styling */
 header {
   background-color: #ffffff;
@@ -239,10 +247,6 @@ header {
   position: static;
 }
 
-
-.container {
-  padding: 0 30px;
-}
 
 .logo {
   max-width: 50px;
@@ -272,6 +276,12 @@ main {
   padding-top: 172.45px;
 }
 
+#home-page main {
+  padding-top: 0;
+}
+
+
+
 
 
 /* intro styling */
@@ -292,6 +302,42 @@ main {
   border-bottom: 2px solid rgba(187,187,187,0.5);
 }
 
+#work {
+  background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
+  padding: 50px 0;
+}
+
 
 
 /* footer styling */
+footer {
+  background-color: #08073F;
+  background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
+  color: #BBBBBB;
+  width: 100%;
+  padding: 50px 0;
+}
+
+
+footer h2 {
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+footer .row {
+  padding-bottom: 40px;
+}
+
+footer .button {
+  display: inline-block;
+  margin: 0 15px 15px 0;
+}
+
+.copyright {
+  font-size: 0.50em;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+
+
+/* about-me styling */
