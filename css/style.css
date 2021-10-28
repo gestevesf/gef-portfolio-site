@@ -66,7 +66,8 @@ h1, h2, h3, h4 {
 #project-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 1.33em;
-  padding: 70px 0 30px 0;
+  padding: 130px 0 20px 0;
+  margin: 0;
 }
 #project-page h3 {
   font-size: 1.15em;
@@ -265,6 +266,7 @@ header {
   box-shadow: 0 4px 4px 1px rgba(8,7,63,0.3);
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 #home-page header {
@@ -523,8 +525,57 @@ ol > li {
   margin-right: auto;
 }
 
-.container-carousel {
 
+
+/* osica project styling */
+#section-01 .subtitle {
+  margin: 0;
+  font-size: 0.66em;
+  line-height: 1.1;
+  padding-bottom: 10px;
+}
+#section-04 .subtitle {
+  margin: 0;
+  font-size: 0.66em;
+  line-height: 1.1;
+  padding-bottom: 10px;
+}
+ #section-05 .subtitle {
+   margin: 0;
+   font-size: 0.66em;
+   line-height: 1.1;
+   padding-bottom: 10px;
+ }
+
+.img-corner {
+  border-radius: 5px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.column-grid {
+  flex: 50%;
+  max-width: 100%;
+  padding: 0;
+}
+.column-grid img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.brand {
+  display: inline-block;
+  width: 50%;
+  margin-right: 15px;
+}
+
+
+
+/* carousel styling */
+.container-carousel {
   position: relative;
   margin: auto;
   border: 2px solid rgba(70,69,107,1);
@@ -586,47 +637,64 @@ ol > li {
   to {opacity: 1}
 }
 
-/* osica project styling */
-#section-01 .subtitle {
-  margin: 0;
-  font-size: 0.66em;
-  line-height: 1.1;
-  padding-bottom: 10px;
-}
-#section-04 .subtitle {
-  margin: 0;
-  font-size: 0.66em;
-  line-height: 1.1;
-  padding-bottom: 10px;
-}
- #section-05 .subtitle {
-   margin: 0;
-   font-size: 0.66em;
-   line-height: 1.1;
-   padding-bottom: 10px;
- }
 
-.img-corner {
-  border-radius: 5px;
+
+/* project numbers styling */
+#project-page main h2 {
+  position: relative;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
+#section-00 h2:before {
+  content: url("../img/svg-numbers/00.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
 }
-.column-grid {
-  flex: 50%;
-  max-width: 100%;
-  padding: 0;
+#section-01 h2:before {
+  content: url("../img/svg-numbers/01.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
 }
-.column-grid img {
-  vertical-align: middle;
-  width: 100%;
+#section-02 h2:before {
+  content: url("../img/svg-numbers/02.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
 }
-
-.brand {
-  display: inline-block;
-  width: 50%;
-  margin-right: 15px;
+#section-03 h2:before {
+  content: url("../img/svg-numbers/03.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+}
+#section-04 h2:before {
+  content: url("../img/svg-numbers/04.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+}
+#section-05 h2:before {
+  content: url("../img/svg-numbers/05.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+}
+#section-06 h2:before {
+  content: url("../img/svg-numbers/06.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+}
+#section-07 h2:before {
+  content: url("../img/svg-numbers/07.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
+}
+#section-08 h2:before {
+  content: url("../img/svg-numbers/08.svg");
+  position: absolute;
+  bottom: 20px;
+  width: 100px;
 }
