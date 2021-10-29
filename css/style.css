@@ -15,7 +15,9 @@ text color (grey for blue): rgba(187,187,187,1) #BBBBBB;
 
 
 
-/*font styling*/
+/* ==============================
+font styling
+================================= */
 body {
   background-color: #ffffff;
   font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -103,29 +105,31 @@ h1, h2, h3, h4 {
 
 
 
-nav {
-  font-size: 0.90em;
-}
-
-p.pre-title {
-  font-size: 0.75em;
-  font-weight: 300;
-}
-
-.center {
-  text-align: center;
-}
-
-
-
-/* images */
+/* ==============================
+images styling
+================================= */
 img{
   width: 100%;
+  max-width: 483px;
+}
+
+.tools {
+  max-width: 315px;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  max-width: 315px;
+  padding: 20px 0 20px 0;
 }
 
 
-
-/* links */
+/* ==============================
+links styling
+================================= */
 a {
   color: #08073F;
   text-decoration: none;
@@ -144,7 +148,9 @@ a:active {
 
 
 
-/* buttons */
+/* ==============================
+buttons styling
+================================= */
 .button {
   display: inline-block;
   background-color: transparent;
@@ -159,7 +165,6 @@ a:active {
   text-align: center;
   width: 140px;
   height: 42px;
-  text-align: center;
 }
 .button:visited {
   color: #EF8354;
@@ -222,7 +227,9 @@ a:active {
 
 
 
-/* span styling */
+/* ==============================
+span styling
+================================= */
 /*span.number {
   font-family: 'Knewave', cursive;
   font-size: 2.80em;
@@ -249,16 +256,39 @@ span.hover {
   display: none;
 }
 
+.center {
+  text-align: center;
+}
+p.pre-title {
+  font-size: 0.75em;
+  font-weight: 300;
+  margin-top: 0;
+}
 
 
-/* layout styling */
+/* ==============================
+layout styling
+================================= */
 .container {
   padding: 0 30px;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 0 10px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
-/* header styling */
+
+/* ==============================
+header styling
+================================= */
 header {
   background-color: #ffffff;
   text-align: center;
@@ -280,11 +310,18 @@ header {
 }
 
 
+
+/* ==============================
+nav styling
+================================= */
 .logo {
   width: 65px;
   margin: 15px;
 }
 
+nav {
+  font-size: 0.90em;
+}
 
 nav {
   display: inline-block;
@@ -304,7 +341,9 @@ nav > ul > li > a {
 
 
 
-/* main styling */
+/* ==============================
+main styling
+================================= */
 main {
   padding-top: 104px;
 }
@@ -320,7 +359,9 @@ main {
 }
 
 
-/* intro styling */
+/* ==============================
+id: intro styling
+================================= */
 #intro {
   background-image: url(../img/desktop/1_home-page/patagonia.jpg);
   background-position: center;
@@ -350,11 +391,13 @@ p.vertical {
 
 
 
-/* work styling */
-.row-projects {
+/* ==============================
+id: work styling
+================================= */
+.proj {
   margin: 40px 0;
 }
-.row-border {
+.border {
   padding-bottom: 40px;
   border-bottom: 2px solid rgba(187,187,187,0.5);
 }
@@ -366,7 +409,9 @@ p.vertical {
 
 
 
-/* footer styling */
+/* ==============================
+footer styling
+================================= */
 footer {
   background-color: #08073F;
   background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
@@ -408,19 +453,9 @@ footer .button {
 
 
 
-/* about-me styling */
-/*#about-page .section .row {
-  padding-bottom: 10px;
-}*/
-
-.profile {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  padding: 20px 0 20px 0;
-}
-
+/* ==============================
+about-me styling
+================================= */
 .col-sm-50 {
   width: 50%;
   display: inline-block;
@@ -430,15 +465,6 @@ footer .button {
 }
 .margin {
   margin: 10px 0 0 0;
-}
-[class*="col-"] {
-  float: left;
-}
-
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .img-margin-top1 img {
@@ -450,7 +476,9 @@ footer .button {
 }
 
 
-/* sneaker-help project styling */
+/* ==============================
+sneaker-help project styling
+================================= */
 .icon {
   width: 50px;
   height: 50px;
@@ -490,13 +518,12 @@ ol > li {
   padding: 7px;
   border: 2px solid #08073F;
   border-radius: 6px;
-  display: inline-block;
+  display: flex;
   margin: 0 15px 15px 0;
-  text-align: left;
+  align-items: center;
 }
 .sm-pad {
   padding-left: 0;
-  text-align: center;
 }
 
 .wire {
@@ -527,7 +554,9 @@ ol > li {
 
 
 
-/* osica project styling */
+/* ==============================
+osica project styling
+================================= */
 #section-01 .subtitle {
   margin: 0;
   font-size: 0.66em;
@@ -574,7 +603,9 @@ ol > li {
 
 
 
-/* carousel styling */
+/* ==============================
+carousel styling
+================================= */
 .container-carousel {
   position: relative;
   margin: auto;
@@ -638,8 +669,9 @@ ol > li {
 }
 
 
-
-/* project numbers styling */
+/* ==============================
+project numbers styling
+================================= */
 #project-page main h2 {
   position: relative;
 }
@@ -697,4 +729,77 @@ ol > li {
   position: absolute;
   bottom: 20px;
   width: 100px;
+}
+
+
+
+/* ==============================
+media queries styling
+================================= */
+
+/* ==============================
+medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  main {
+    padding-top: 93px;
+  }
+  #about-page main {
+    padding: 123px 0 60px 0;
+  }
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 15px;
+  }
+
+  body {
+    font-size: 22px;
+  }
+
+  .button {
+    font-size: 18px;
+    width: 140px;
+  }
+
+  .col-md-4 {
+    width: 33.3%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .sm-pad {
+    display: inline-block;
+  }
+
+/*  .home-img {
+    padding-top: 27px;
+  }
+*/
+
+
+}
+
+
+
+/* ==============================
+large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+}
+
+
+
+/* ==============================
+x-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
 }
