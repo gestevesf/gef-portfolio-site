@@ -193,7 +193,7 @@ a:active {
   letter-spacing: 5px;
 }
 #intro a:active {
-  color: #08073F;
+  color: #ffffff;
 }
 
 
@@ -675,6 +675,11 @@ osica project styling
   padding-top: 10px;
 }
 
+.row-line {
+  margin-top: 70px;
+  padding-top: 70px;
+  border-top: 2px solid rgba(70,69,107,1);
+}
 
 
 /* ==============================
@@ -770,7 +775,7 @@ project numbers styling
 
 
 /* ==============================
-project numbers styling
+animated svg styling
 ================================= */
 @keyframes color-change {
   0% {fill: #edc655;}
@@ -797,6 +802,9 @@ project numbers styling
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+.svg-ani {
+  float: none;
+}
 
 
 
@@ -828,7 +836,7 @@ medium devices (640px and larger)
   }
 
   body {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .logo {
@@ -897,8 +905,12 @@ medium devices (640px and larger)
     display: unset;
   }
 
-  #section07 .col-md-6 {ß
+  #section07 .col-md-6 {
     float: left;
+  }
+
+  #section-03 .right {
+    transform: translateY(37%);
   }
 
 
@@ -914,6 +926,10 @@ medium devices (640px and larger)
   #work {
     background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
     padding: 90px 0 0 0;
+  }
+
+  .svg-ani {
+    float: left;
   }
 
 }
