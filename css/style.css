@@ -22,7 +22,7 @@ body {
   background-color: #ffffff;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 135%;
   letter-spacing: 1.5px;
   color: #5A5A5A;
@@ -68,7 +68,7 @@ h1, h2, h3, h4 {
 #project-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 1.33em;
-  padding: 130px 0 20px 0;
+  padding: 140px 0 30px 0;
   margin: 0;
 }
 #project-page h3 {
@@ -134,6 +134,13 @@ img{
   max-width: 483px;
 }
 
+.img-no {
+  display: none;
+}
+.img-no2 {
+  display: none;
+}
+
 
 
 /* ==============================
@@ -155,12 +162,16 @@ a:active {
   color: #08073F;
 }
 
+header a {
+  font-weight: 300;
+}
+
 
 
 /* ==============================
 buttons styling
 ================================= */
-.button {
+/*.button {
   display: inline-block;
   background-color: transparent;
   color: #EF8354;
@@ -186,12 +197,44 @@ buttons styling
 }
 .button:active {
   color: #EF8354;
+}*/
+
+.button {
+  border: none;
+  background-color: transparent;
+  color: #EF8354 !important;
+  font-size: 1.10em
+  font-weight: 400;
+  line-height: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #EF8354;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  width: 140px
+  height: 42px;
+}
+.button:visited {
+  color: #EF8354;
+}
+.button:hover {
+  color: #08073F !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px;
+  background-color: #EF8354;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(205,131,84,0.8);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(205,131,84,0.8);
+  transition: all 0.3s ease 0s;
+}
+.button:active {
+  color: #EF8354;
 }
 
 
 .button.email {
   background-color: #EF8354;
-  color: #08073F;
+  color: #08073F !important;
 }
 .button.email:visited {
   background-color: #EF8354;
@@ -199,7 +242,7 @@ buttons styling
 }
 .button.email:hover {
   background-color: transparent;
-  color: #EF8354;
+  color: #EF8354 !important;
 }
 .button.email:active {
   background-color: #EF8354;
@@ -209,11 +252,12 @@ buttons styling
 .button.resume {
   background-color: #EF8354;
   display: inline;
-  color: #08073F;
+  color: #08073F !important;
   border-color: #08073F;
   box-shadow: 0 5px 5px 0 rgba(70,69,107,0.8);
   font-size: 19.8px;
-  margin-left: 10px;
+  font-weight: 400;
+  margin-left: 15px;
 }
 .button.resume:visited {
   background-color: #EF8354;
@@ -231,21 +275,10 @@ buttons styling
 }
 
 
-.desktop-menu {
-  display: none;
-}
-
-
 
 /* ==============================
 span styling
 ================================= */
-/*span.number {
-  font-family: 'Knewave', cursive;
-  font-size: 2.80em;
-  color: #ffffff;
-  text-shadow: -4px -4px 0 rgba(239,131,84,0.6), 4px -4px 0 rgba(239,131,84,0.6), -4px 4px 0 rgba(239,131,84,0.6), 4px 4px 0 rgba(239,131,84,0.6);
-}*/
 span.bold-white {
   color: #ffffff;
   font-weight: 400;
@@ -255,16 +288,36 @@ span.bold-blue {
   color: #08073F;
 }
 span.bold-grey {
+  font-weight: 400;
+  color: #5A5A5A;
+}
+span.grey {
   font-weight: 700;
   color: #5A5A5A;
 }
+
 span.default {
   color: #EF8354;
+  position: relative;
+  display: inline-block;
+}
+span.default:hover {
+  display: none;
+  span.hover {
+
+  }
 }
 span.hover {
-  color: #ffffff;
   display: none;
+  position: absolute;
+  color: #EF8354;
+  z-index: 99;
 }
+span.hover:hover {
+  display: inline;
+}
+
+
 
 .center {
   text-align: center;
@@ -280,12 +333,18 @@ p.pre-title {
 layout styling
 ================================= */
 .container {
+  width: 100%;
   padding: 0 30px;
 }
 
 [class*="col-"] {
   float: left;
-  padding: 0 10px;
+  padding: 0 15px;
+}
+
+.sm {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .row::after {
@@ -314,10 +373,23 @@ header {
   box-shadow: none;
 }
 
-
 #home-page header a {
   color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
 }
+#home-page header a:visited {
+  color: #ffffff;
+}
+#home-page header a:hover,
+#home-page header a:focus {
+  color: #EF8354;
+  text-decoration: none;
+}
+#home-page header a:active {
+  color: #ffffff;
+}
+
 
 .desktop-menu {
   display: none;
@@ -523,8 +595,11 @@ ol > li {
   box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
+ul.sm-pad {
+  display: inline-block;
+  margin: 0 15px 15px 0;
+}
 .sm-box {
-  list-style-type: none;
   font-size: 0.83em;
   line-height: 1;
   width: 50%;
@@ -536,9 +611,21 @@ ol > li {
   margin: 0 15px 15px 0;
   align-items: center;
 }
-.sm-pad {
-  padding-left: 0;
+
+footer .button {
+  display: inline-block;
+  margin: 0 15px 15px 0;
 }
+
+/*
+.vert {
+  transform: translateY(50%);
+}
+.row-sm-box {
+  display: flex;
+  flex-direction: row;
+}
+*/
 
 .wire {
   margin-top: 20px;
@@ -566,6 +653,10 @@ ol > li {
   margin-right: auto;
 }
 
+#section03 .right {
+  transform: translateY(50%);
+}
+
 
 
 /* ==============================
@@ -589,6 +680,9 @@ osica project styling
    line-height: 1.1;
    padding-bottom: 10px;
  }
+ #section-03 .right {
+   transform: translateY(25%);
+ }
 
 .img-corner {
   border-radius: 5px;
@@ -607,6 +701,14 @@ osica project styling
 .column-grid img {
   vertical-align: middle;
   width: 100%;
+}
+
+
+.left {
+  padding-top: 10px;
+}
+.right {
+  padding-top: 10px;
 }
 
 
@@ -676,68 +778,32 @@ carousel styling
   to {opacity: 1}
 }
 
+#section07 .col-md-6 {
+  float: none;
+}
+
 
 /* ==============================
 project numbers styling
 ================================= */
-#project-page main h2 {
+#project-page main .numbers {
   position: relative;
 }
 
-#section-00 h2:before {
-  content: url("../img/svg-numbers/00.svg");
+#project-page main .numbers img {
   position: absolute;
-  bottom: 20px;
-  width: 100px;
+  height: 90px;
+  width: auto;
+  left: 0;
+  bottom: 30px;
 }
-#section-01 h2:before {
-  content: url("../img/svg-numbers/01.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
+
+#project-page main .numbers h2 {
+  position: relative;
+  z-index: 1;
 }
-#section-02 h2:before {
-  content: url("../img/svg-numbers/02.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
-}
-#section-03 h2:before {
-  content: url("../img/svg-numbers/03.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
-}
-#section-04 h2:before {
-  content: url("../img/svg-numbers/04.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
-}
-#section-05 h2:before {
-  content: url("../img/svg-numbers/05.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
-}
-#section-06 h2:before {
-  content: url("../img/svg-numbers/06.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
-}
-#section-07 h2:before {
-  content: url("../img/svg-numbers/07.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
-}
-#section-08 h2:before {
-  content: url("../img/svg-numbers/08.svg");
-  position: absolute;
-  bottom: 20px;
-  width: 100px;
-}
+
+
 
 
 
@@ -764,7 +830,6 @@ medium devices (640px and larger)
   nav {
     width: auto;
     margin-top: 17px;
-    float: right;
   }
 
   body {
@@ -812,6 +877,34 @@ medium devices (640px and larger)
     flex-direction: row;
     justify-content: space-between;
   }
+
+  #project-page main .numbers img {
+    height: 100px;
+  }
+
+  ol {
+    padding-left: 35px;
+  }
+  .sm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .left {
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  .right {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .img-no {
+    display: unset;
+  }
+
+  #section07 .col-md-6 {
+    float: left;
+  }
 }
 
 
@@ -848,14 +941,26 @@ large devices (1024px or larger)
   nav {
     margin-top: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
   }
   .logo {
     width: 138px;
   }
-  .navigation {
-    margin-top:
+  nav ul a {
+    padding: 0;
+  }
+
+  nav ul {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 8px;
+  }
+
+  nav a {
+    width: 40%;
+    text-align: center;
   }
 
   .desktop-menu {
@@ -892,6 +997,18 @@ large devices (1024px or larger)
     max-width: 483px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  ol {
+    padding-left: 40px;
+  }
+
+  #project-page main .numbers img {
+    height: 110px;
+  }
+
+  .img-no2 {
+    display: unset;
   }
 }
 
