@@ -158,7 +158,7 @@ a:focus {
   color: #EF8354;
   text-decoration: none;
   font-weight: 700;
-  text-shadow: 1px 1px rgba(0,0,0,0.3);
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 a:active {
   color: #08073F;
@@ -189,7 +189,7 @@ a:active {
 #intro a:hover,
 #intro a:focus {
   color: #EF8354;
-  text-shadow: 3px 3px rgba(0,0,0,0.3);
+  text-shadow: 3px 3px 2px rgba(0,0,0,0.3);
   letter-spacing: 5px;
 }
 #intro a:active {
@@ -769,6 +769,37 @@ project numbers styling
 
 
 
+/* ==============================
+project numbers styling
+================================= */
+@keyframes color-change {
+  0% {fill: #edc655;}
+ 50% {fill: #fcffad;}
+ 100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+
+
 
 
 /* ==============================
@@ -910,7 +941,7 @@ large devices (1024px or larger)
   }
 
   body {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   header {
