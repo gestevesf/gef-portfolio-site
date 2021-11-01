@@ -255,6 +255,7 @@ buttons styling
   -webkit-box-shadow: 0px 5px 40px -10px rgba(205,131,84,0.8);
   -moz-box-shadow: 0px 5px 40px -10px rgba(205,131,84,0.8);
   transition: all 0.3s ease 0s;
+  text-shadow: none;
 }
 .button:active {
   color: #EF8354;
@@ -280,12 +281,11 @@ buttons styling
 
 .button.resume {
   background-color: #EF8354;
-  display: inline;
   color: #08073F !important;
   border-color: #08073F;
-  box-shadow: 0 5px 5px 0 rgba(70,69,107,0.8);
+  box-shadow: 0 5px 5px 0 rgba(70,69,107,0.7);
   font-size: 19.8px;
-  font-weight: 400;
+  font-weight: 300;
   margin-left: 15px;
 }
 .button.resume:visited {
@@ -297,6 +297,7 @@ buttons styling
 .button.resume:hover {
   cursor: pointer;
   font-weight: 400;
+  transition: all 0.1s ease 0s;
 }
 .button.resume:active {
   box-shadow: 0 1px 1px 0 rgba(2,2,22,1);
@@ -432,10 +433,10 @@ main {
   padding-top: 0;
 }
 #about-page main {
-  padding: 134px 0 60px 0;
+  padding: 134px 0 80px 0;
 }
 #project-page main {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 
@@ -475,16 +476,17 @@ p.vertical {
 id: work styling
 ================================= */
 .proj {
-  margin: 40px 0;
+  margin: 70px 0 70px 0;
 }
 .border {
-  padding-bottom: 40px;
+  margin-top: 60px;
+  padding-bottom: 80px;
   border-bottom: 2px solid rgba(187,187,187,0.5);
 }
 
 #work {
   background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
-  padding: 50px 0 30px 0;
+  padding: 60px 0 0 0;
 }
 
 
@@ -497,7 +499,7 @@ footer {
   background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
   color: #BBBBBB;
   width: 100%;
-  padding: 50px 0 50px 0;
+  padding: 60px 0 50px 0;
 }
 
 #about-page footer h2 {
@@ -505,7 +507,7 @@ footer {
   margin-bottom: 50px;
 }
 #about-page footer {
-  padding: 50px 0 0 0;
+  padding: 70px 0 0 0;
 }
 
 #project-page footer h2 {
@@ -514,7 +516,7 @@ footer {
   margin-bottom: 50px;
 }
 #project-page footer {
-  padding: 50px 0 0 0;
+  padding: 70px 0 0 0;
 }
 
 footer .row {
@@ -589,37 +591,10 @@ ol > li {
   box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
-ul.sm-pad {
-  display: inline-block;
-  margin: 0 15px 15px 0;
-}
-.sm-box {
-  font-size: 0.83em;
-  line-height: 1;
-  width: 50%;
-  height: 93px;
-  padding: 7px;
-  border: 2px solid #08073F;
-  border-radius: 6px;
-  display: flex;
-  margin: 0 15px 15px 0;
-  align-items: center;
-}
-
 footer .button {
   display: inline-block;
   margin: 0 15px 15px 0;
 }
-
-/*
-.vert {
-  transform: translateY(50%);
-}
-.row-sm-box {
-  display: flex;
-  flex-direction: row;
-}
-*/
 
 .wire {
   margin-top: 20px;
@@ -628,11 +603,6 @@ footer .button {
 #section-end {
   margin-top: 30px;
 }
-#section-end .row-line {
-  padding-top: 30px;
-  border-top: 2px solid rgba(70,69,107,1);
-}
-
 #section-end .center {
   margin: 25px 0 25px 0;
 }
@@ -896,9 +866,25 @@ medium devices (640px and larger)
     display: unset;
   }
 
-  #section07 .col-md-6 {
+  #section07 .col-md-6 {ß
     float: left;
   }
+
+
+
+  .proj {
+    margin: 70px 0 80px 0;
+  }
+  .border {
+    margin-top: 30px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid rgba(187,187,187,0.5);
+  }
+  #work {
+    background-image: linear-gradient(rgba(2,2,22,1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
+    padding: 90px 0 0 0;
+  }
+
 }
 
 
@@ -920,7 +906,7 @@ large devices (1024px or larger)
     padding-top: 109px;
   }
   #about-page main {
-    padding: 220px 0 60px 0;
+    padding: 200px 0 100px 0;
   }
 
   body {
@@ -1003,6 +989,31 @@ large devices (1024px or larger)
 
   .img-no2 {
     display: unset;
+  }
+
+
+  .proj {
+    margin: 100px 0 100px 0;
+  }
+  .border {
+    margin-top: 60px;
+    padding-bottom: 100px;
+  }
+  #work {
+    padding: 90px 0 0 0;
+  }
+  footer {
+    padding: 90px 0 50px 0;
+  }
+
+  #about-page footer {
+    padding: 90px 0 0 0;
+  }
+  #project-page footer {
+    padding: 90px 0 0 0;
+  }
+  #project-page main {
+    margin-bottom: 150px;
   }
 }
 
