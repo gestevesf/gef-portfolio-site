@@ -157,15 +157,44 @@ a:hover,
 a:focus {
   color: #EF8354;
   text-decoration: none;
+  font-weight: 700;
+  text-shadow: 1px 1px rgba(0,0,0,0.3);
 }
 a:active {
   color: #08073F;
 }
 
-header a {
-  font-weight: 300;
+
+#home-page header a {
+  color: #ffffff;
+}
+#home-page header a:visited {
+  color: #ffffff;
+}
+#home-page header a:hover,
+#home-page header a:focus {
+  color: #EF8354;
+}
+#home-page header a:active {
+  color: #ffffff;
 }
 
+
+#intro a {
+  color: #ffffff;
+}
+#intro a:visited {
+  color: #ffffff;
+}
+#intro a:hover,
+#intro a:focus {
+  color: #EF8354;
+  text-shadow: 3px 3px rgba(0,0,0,0.3);
+  letter-spacing: 5px;
+}
+#intro a:active {
+  color: #08073F;
+}
 
 
 /* ==============================
@@ -296,27 +325,9 @@ span.grey {
   color: #5A5A5A;
 }
 
-span.default {
-  color: #EF8354;
-  position: relative;
-  display: inline-block;
-}
-span.default:hover {
-  display: none;
-  span.hover {
-
-  }
-}
 span.hover {
   display: none;
-  position: absolute;
-  color: #EF8354;
-  z-index: 99;
 }
-span.hover:hover {
-  display: inline;
-}
-
 
 
 .center {
@@ -371,23 +382,6 @@ header {
 #home-page header {
   background-color: transparent;
   box-shadow: none;
-}
-
-#home-page header a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-}
-#home-page header a:visited {
-  color: #ffffff;
-}
-#home-page header a:hover,
-#home-page header a:focus {
-  color: #EF8354;
-  text-decoration: none;
-}
-#home-page header a:active {
-  color: #ffffff;
 }
 
 
