@@ -83,10 +83,6 @@ h1, h2, h3, h4 {
   margin: 10px 0;
 }
 
-#about-page h1 {
-  padding: 0 0 20px 0;
-}
-
 #about-page h1, #about-page h2 {
   font-family: 'Knewave', cursive;
   font-size: 1.44em;
@@ -569,10 +565,6 @@ about-me styling
   margin-top: 1em;
 }
 
-.top {
-  padding-top: 30px;
-}
-
 /* ==============================
 sneaker-help project styling
 ================================= */
@@ -900,6 +892,14 @@ medium devices (640px and larger)
     padding: 120px 0 80px 0;
   }
 
+  #about-page main .row {
+    margin-bottom: 40px;
+  }
+
+  #project-page main .row {
+    margin-bottom: 60px;
+  }
+
   header {
     text-align: unset;
     padding: 10px 0 5px;
@@ -1174,6 +1174,10 @@ large devices (1024px or larger)
 
   #about-page footer {
     padding: 90px 0 0 0;
+  }
+
+  #about-page .section .container .row:nth-child(3) .right {
+    padding-left: 60px;
   }
 
   #project-page footer {
