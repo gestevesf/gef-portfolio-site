@@ -440,10 +440,10 @@ nav>ul>li>a {
   background-image: linear-gradient(rgba(2, 2, 22, 1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
   box-shadow: 0 4px 4px 1px rgba(8, 7, 63, 0.3);
   transition: 0.3s ease;
-  height: 45px;
+  /*height: 45px;*/
 }
 
-#home-page .logo.white {
+#home-page header.white .logo {
   filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(33deg) brightness(106%) contrast(102%);
 }
 
@@ -491,6 +491,12 @@ nav experience
 ================================= */
 
 
+.mobile-menu {
+  position: relative;
+}
+
+
+/*
 .cd-stretchy-nav {
   position: fixed;
   z-index: 2;
@@ -499,7 +505,7 @@ nav experience
   pointer-events: none;
 }
 .cd-stretchy-nav .stretchy-nav-bg{
-  /* this is the stretching navigation background */
+  /* this is the stretching navigation background
   position: absolute;
   z-index: 1;
   top: 0;
@@ -510,7 +516,7 @@ nav experience
   /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -webkit-transition: height 0.2s, box-shadow 0.2s;
   -moz-transition: height 0.2s, box-shadow 0.2s;
-  transition: height 0.2s, box-shadow 0.2s;*/
+  transition: height 0.2s, box-shadow 0.2s;
 }
 .cd-stretchy-nav.nav-is-visible {
   pointer-events: auto;
@@ -519,9 +525,9 @@ nav experience
   height: 100%;
   background-color: #08073F;
   background-image: linear-gradient(rgba(2, 2, 22, 1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
-  /*background-color: rgba(8,7,63,0.9);*/
+  /*background-color: rgba(8,7,63,0.9);
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .cd-nav-trigger {
   position: absolute;
@@ -530,12 +536,26 @@ nav experience
   right: 16px;
   height: 42px;
   width: 42px;
-  /* replace text with image */
+  /* replace text with image*/
   overflow: hidden;
   white-space: nowrap;
   color: transparent;
   pointer-events: auto;
 }
+#about-page .cd-nav-trigger {
+  position: absolute;
+  z-index: 3;
+  top: 3px;
+  right: 16px;
+  height: 42px;
+  width: 42px;
+  /* replace text with image*/
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  pointer-events: auto;
+}
+
 .cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before {
   /* this is the hamburger icon */
   position: absolute;
@@ -543,6 +563,14 @@ nav experience
   height: 2px;
   background-color: #fff;
 }
+#about-page .cd-nav-trigger span, #about-page .cd-nav-trigger span::after, #about-page .cd-nav-trigger span::before {
+  background-color: #08073F;
+}
+#project-page .cd-nav-trigger span, #project-page .cd-nav-trigger span::after, #project-page .cd-nav-trigger span::before {
+  background-color: #08073F;
+}
+
+
 .cd-nav-trigger span {
   /* middle line of the hamburger icon */
   left: 50%;
@@ -558,6 +586,35 @@ nav experience
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
+#about-page .cd-nav-trigger span {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+#project-page .cd-nav-trigger span {
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
 .cd-nav-trigger span::after, .cd-nav-trigger span::before {
   /* top and bottom lines of the hamburger icon */
   content: '';
@@ -569,6 +626,27 @@ nav experience
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
 }
+#about-page .cd-nav-trigger span::after, #about-page .cd-nav-trigger span::before {
+  content: '';
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+#project-page .cd-nav-trigger span::after, #project-page .cd-nav-trigger span::before {
+  content: '';
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+}
+
 .cd-nav-trigger span::before {
   -webkit-transform: translateY(-6px);
   -moz-transform: translateY(-6px);
@@ -576,6 +654,21 @@ nav experience
   -o-transform: translateY(-6px);
   transform: translateY(-6px);
 }
+#about-page .cd-nav-trigger span::before {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+#project-page .cd-nav-trigger span::before {
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  transform: translateY(-6px);
+}
+
 .cd-nav-trigger span::after {
   -webkit-transform: translateY(6px);
   -moz-transform: translateY(6px);
@@ -583,12 +676,41 @@ nav experience
   -o-transform: translateY(6px);
   transform: translateY(6px);
 }
+#about-page.cd-nav-trigger span::after {
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+#project-page.cd-nav-trigger span::after {
+  -webkit-transform: translateY(6px);
+  -moz-transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -o-transform: translateY(6px);
+  transform: translateY(6px);
+}
+
 .no-touch .cd-nav-trigger:hover ~ .stretchy-nav-bg {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
+#about-page .no-touch .cd-nav-trigger:hover ~ .stretchy-nav-bg {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+#project-page .no-touch .cd-nav-trigger:hover ~ .stretchy-nav-bg {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
 .nav-is-visible .cd-nav-trigger span {
   background-color: transparent;
 }
+#about-page .nav-is-visible .cd-nav-trigger span {
+  background-color: transparent;
+}
+#project-page .nav-is-visible .cd-nav-trigger span {
+  background-color: transparent;
+}
+
 .nav-is-visible .cd-nav-trigger span::before {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -596,6 +718,21 @@ nav experience
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+#about-page .nav-is-visible .cd-nav-trigger span::before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+#project-page .nav-is-visible .cd-nav-trigger span::before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
 .nav-is-visible .cd-nav-trigger span::after {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -603,12 +740,28 @@ nav experience
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+#about-page .nav-is-visible .cd-nav-trigger span::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#project-page .nav-is-visible .cd-nav-trigger span::after {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 .cd-stretchy-nav ul {
   position: relative;
   z-index: 2;
   padding: 30px 0 0;
-  visibility: hidden;
+  display: none;
+  /*visibility: hidden;*/
 /*  -webkit-transition: visibility 0.3s;
   -moz-transition: visibility 0.3s;
   transition: visibility 0.3s;*/
@@ -687,7 +840,8 @@ nav experience
 }
 
 .cd-stretchy-nav.nav-is-visible ul {
-  visibility: visible;
+  /*visibility: visible;*/
+  display: block;
 }
 .cd-stretchy-nav.nav-is-visible ul a::after {
   /* navigation item icons */
@@ -780,14 +934,11 @@ nav experience
 
 
 
-
-
-
 /* ==============================
 main styling
 ================================= */
 main {
-  padding-top: 94px;
+  padding-top: 48px;
 }
 
 #home-page main {
@@ -836,6 +987,36 @@ p.vertical {
   float: left;
   margin-top: 100% font-size: 18px;
   color: #ffffff;
+}
+
+.indicator {
+    width: 25px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    position: relative;
+}
+.indicator:before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30px;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        opacity: 1; top: 5px;
+    }
+    100% {
+        opacity: 0; top: 25px;
+        transform: scale(0.6);
+    }
 }
 
 /* ==============================
@@ -971,6 +1152,32 @@ ol>li {
   transform: translateY(50%);
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 17px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 1px solid rgba(8,7,63,1); /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(8,7,63,1); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 7px; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+}
+
+#myBtn:hover {
+  color: rgba(8,7,63,1);
+  background-color: rgba(239,131,84,1);
+  border: 1px solid rgba(8,7,63,1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(70,69,107,0.8);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(70,69,107,0.8);
+  transition: all 0.3s ease 0s;
+  text-shadow: none;
+}
+
 /* ==============================
 osica project styling
 ================================= */
@@ -1044,6 +1251,8 @@ carousel styling
   border-radius: 10px;
   padding: 35px 35px 0;
   height: 488px;
+  display: flex;
+  align-items: stretch;
 }
 
 .homepage, .stylists, .products, .stylists-bio {
@@ -1085,12 +1294,15 @@ carousel styling
 .text {
   color: #08073F;
   font-size: 0.83em;
-  font-weight: 700;
+  font-weight: 400;
   padding: 8px 12px;
   /*position: absolute;*/
   bottom: 8px;
   width: 100%;
   text-align: center;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .numbertext {
@@ -1099,6 +1311,12 @@ carousel styling
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.ctr {
+  text-align: center;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 /*.fade {
@@ -1240,7 +1458,7 @@ medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   main {
-    padding-top: 69px;
+    padding-top: 67px;
   }
 
   #about-page main {
@@ -1264,13 +1482,24 @@ medium devices (640px and larger)
     padding: 10px 0;
   }
 
-  #home-page header.white {
-    height: 55px;
+  .cd-nav-trigger {
+    top: 14px;
+    right: 25px;
+  }
+  #about-page .cd-nav-trigger {
+    top: 14px;
+    right: 25px;
+  }
+  #project-page .cd-nav-trigger {
+    top: 14px;
+    right: 25px;
   }
 
-  /*.cd-nav-trigger {
-    top: 8px;
-    right: 20px;*/
+  .cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before {
+    /* this is the hamburger icon */
+    width: 25px;
+    height: 2.5px
+  }
 
   /*nav {
     width: auto;
@@ -1402,6 +1631,13 @@ medium devices (640px and larger)
   .container-carousel {
     padding: 40px 40px 0;
     height: 642px;
+  }
+
+  #myBtn {
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    padding: 12px; /* Some padding */
+    font-size: 18px; /* Increase font size */
   }
 }
 
@@ -1580,6 +1816,11 @@ large devices (1024px or larger)
 
   #section07 img {
     margin-left: 45px;
+  }
+
+  #myBtn {
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 50px; /* Place the button 30px from the right */
   }
 }
 

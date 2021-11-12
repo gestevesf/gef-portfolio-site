@@ -22,15 +22,19 @@
 
           <div class="mobile-menu navtoggle" id="myNavtoggle">
             <a href="index.html">
-              <img src="img/gef-logo.svg" alt="logo Gonçalo Esteves Ferreira" class="logo">
+              <img class="logo" src="img/gef-logo.svg" alt="logo Gonçalo Esteves Ferreira">
             </a>
-            <nav>
+            <nav class="cd-stretchy-nav">
+              <a class="cd-nav-trigger" href="#0">
+                <span aria-hidden="true"></span>
+              </a>
               <ul class="navigation">
                 <li><a href="index.html#work">work</a></li>
                 <li><a href="about.html">about me</a></li>
                 <li><a href="#contact" onclick="menuToggle()">contact</a></li>
-                <li><a href="javascript:void(0);" class="head-icon" onclick="menuToggle()"><i class="fas fa-bars fa-lg"></i></a></li>
+                <!--<li><a href="javascript:void(0);" class="head-icon" onclick="menuToggle()"><i class="fas fa-bars fa-lg"></i></a></li> -->
               </ul>
+              <span aria-hidden="true" class="stretchy-nav-bg"></span>
             </nav>
           </div>
 
@@ -58,6 +62,7 @@
   </header>
 
   <main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
     <div class="section-top">
         <div class="row">
           <div class="column">
