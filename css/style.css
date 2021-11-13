@@ -1498,7 +1498,7 @@ medium devices (640px and larger)
   .cd-nav-trigger span, .cd-nav-trigger span::after, .cd-nav-trigger span::before {
     /* this is the hamburger icon */
     width: 25px;
-    height: 2.5px
+
   }
 
   /*nav {
