@@ -3,7 +3,7 @@ colors used:
 primary color (russian violet): rgba(8,7,63,1) #08073F;
   tone (shadow): rgba(70,69,107,1) #46456B
 secondary color (mandarine): rgba(239,131,84,1) #EF8354;
--> #cd4c13
+-> rgba(205, 76, 19, 1) #cd4c13
   tone (dark mandarine): rgba(205,131,84,1) #CD8354
 text color (grey for white): rgba(90,90,90,1) #5A5A5A;
 text color (grey for blue): rgba(187,187,187,1) #BBBBBB;
@@ -244,7 +244,6 @@ buttons styling
 } */
 
 .button {
-  border: none;
   background-color: transparent;
   color: #ef8354 !important;
   font-size: 1.1em;
@@ -407,7 +406,8 @@ header styling
 header {
   background-color: #fff;
   padding: 5px 0;
-  box-shadow: 0 4px 4px 1px rgba(8, 7, 63, 0.3);
+
+  /* box-shadow: 0 4px 4px 1px rgba(8, 7, 63, 0.3); */
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -452,9 +452,15 @@ nav > ul > li > a {
   background-image: linear-gradient(rgba(2, 2, 22, 1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
   box-shadow: 0 4px 4px 1px rgba(8, 7, 63, 0.3);
   transition: 0.3s ease;
-
-  /* height: 45px; */
 }
+
+header.white {
+  background-color: #fff;
+  box-shadow: 0 4px 4px 1px rgba(8, 7, 63, 0.3);
+  transition: 0.3s ease;
+}
+
+/* height: 45px; */
 
 #home-page header.white .logo {
   filter: invert(100%) sepia(2%) saturate(9%) hue-rotate(33deg) brightness(106%) contrast(102%);
@@ -1003,7 +1009,8 @@ main {
 }
 
 .marg-top {
-  margin-top: 50px;
+  margin-top: 60px;
+  padding-bottom: 50px;
 }
 
 #project-page main {
@@ -1437,6 +1444,23 @@ project numbers styling
 }
 
 /* ==============================
+table of content styling
+================================= */
+main > nav {
+  display: none;
+}
+
+.table {
+  list-style-type: none;
+  border-left: 2px solid rgba(239, 131, 84, 0.7);
+  border-radius: unset;
+  box-shadow: none;
+  padding: 10px 15px 0;
+  margin-top: 15px;
+  font-size: 0.85em;
+}
+
+/* ==============================
 animated svg styling
 ================================= */
 
@@ -1544,6 +1568,7 @@ medium devices (640px and larger)
 
   .marg-top {
     margin-top: 0;
+    padding-bottom: 50px;
   }
 
   #project-page main .row {
@@ -1716,6 +1741,11 @@ medium devices (640px and larger)
     padding: 12px; /* Some padding */
     font-size: 18px; /* Increase font size */
   }
+
+  .table {
+    padding: 10px 20px 0;
+    margin-top: 20px;
+  }
 }
 
 /* ==============================
@@ -1783,8 +1813,12 @@ large devices (1024px or larger)
   }
 
   nav a {
-    width: 40%;
+    width: 60%;
     text-align: center;
+  }
+
+  header .container {
+    padding: 0 90px;
   }
 
   .navtoggle.responsive li {
@@ -1920,25 +1954,30 @@ large devices (1024px or larger)
   ================================= */
 
   /* 1. Enable smooth scrolling */
+
+  /* 2. Make nav sticky */
+
+  /* 3. ScrollSpy active styles (see JS tab for activation) */
+
   html {
     scroll-behavior: smooth;
   }
 
-  /* 2. Make nav sticky */
-  main > nav {
+  /* main > nav {
+    display: unset;
     position: fixed;
     top: 15rem;
     align-self: start;
   }
 
-  /* 3. ScrollSpy active styles (see JS tab for activation) */
   .section-nav li.active > a {
     color: #333;
-    font-weight: 700;
-  }
+    font-weight: 700 !important;
+  } */
 
   /* Sidebar Navigation */
-  .section-nav {
+
+  /* .section-nav {
     padding-left: 0;
     border-left: 1px solid rgba(8, 7, 63, 0.8);
     right: 25px;
@@ -1949,7 +1988,6 @@ large devices (1024px or larger)
     display: block;
     padding: 0.125rem 0;
     color: rgba(8, 7, 63, 0.8);
-    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
     width: auto;
     text-align: left;
     font-size: initial;
@@ -1967,13 +2005,17 @@ large devices (1024px or larger)
     list-style: none;
     margin: 0;
     padding: 0;
-    border-radius: none;
+    border-radius: 0;
     box-shadow: none;
   }
 
   .section-nav li {
     margin-left: 1rem;
     padding: 5px 0;
+  } */
+
+  .table {
+    padding: 10px 25px 0;
   }
 }
 
