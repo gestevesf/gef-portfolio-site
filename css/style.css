@@ -1138,10 +1138,6 @@ footer .row {
 /* ==============================
 about-me styling
 ================================= */
-.col-sm-50 {
-  width: 50%;
-  display: inline-block;
-}
 
 .min-padding {
   padding-left: 20px;
@@ -1768,6 +1764,11 @@ large devices (1024px or larger)
 
   #about-page main {
     padding: 176px 0 90px;
+  }
+
+  .col-sm-50 {
+    width: 50%;
+    display: inline-block;
   }
 
   body {
