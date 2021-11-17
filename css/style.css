@@ -450,7 +450,7 @@ nav > ul > li > a {
 #home-page header.white {
   background-color: #08073f;
   background-image: linear-gradient(rgba(2, 2, 22, 1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
-  box-shadow: 0 4px 4px 1px rgba(8, 7, 63, 0.3);
+  box-shadow: 0 4px 4px 1px rgba(54, 53, 63, 0.3);
   transition: 0.3s ease;
 }
 
