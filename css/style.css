@@ -361,7 +361,7 @@ span styling
 ================================= */
 span.bold-white {
   color: #fff;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 span.bold-blue {
@@ -1102,6 +1102,20 @@ p.vertical {
   }
 }
 
+#intro .col-md-6 {
+  width: unset;
+  padding: 0 15px 0 0;
+}
+
+#intro .left {
+  margin-top: 3px;
+}
+
+#intro .right {
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
 /* ==============================
 id: work styling
 ================================= */
@@ -1550,7 +1564,7 @@ small devices (375px and larger)
 ================================= */
 @media only screen and (min-width: 375px) {
   #intro {
-    padding: 280px 0 65px;
+    padding: 305px 0 65px;
   }
 
   p.junior {
@@ -1650,7 +1664,15 @@ medium devices (640px and larger)
   }
 
   #intro {
-    padding: 430px 30px 200px;
+    padding: 350px 30px 200px;
+  }
+
+  #intro .left {
+    margin-top: 8px;
+  }
+
+  #intro .right {
+    font-size: 0.8em;
   }
 
   p.junior {
@@ -1899,6 +1921,24 @@ large devices (1024px or larger)
     width: 50%;
   }
 
+  #intro .col-md-6 {
+    width: unset;
+    padding: 0 15px 0 0;
+  }
+
+  #intro .left {
+    margin-top: 10px;
+  }
+
+  #intro .right {
+    font-size: 0.6em;
+    font-weight: 200;
+  }
+
+  p.vertical {
+    bottom: 100px;
+  }
+
   .img-end {
     max-width: 400px;
   }
@@ -1939,7 +1979,7 @@ large devices (1024px or larger)
   }
 
   #intro {
-    padding: 300px 0 150px;
+    padding: 200px 0 150px;
   }
 
   p.junior {
