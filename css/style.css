@@ -24,7 +24,7 @@ body {
   background-color: #fff;
   font-family: 'Exo', sans-serif;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 130%;
   color: #4f4f66;
 }
@@ -84,7 +84,7 @@ h4 {
 #project-page h2 {
   font-size: 1.9em;
   font-weight: 800;
-  padding: 200px 0 25px;
+  padding: 250px 0 50px;
   margin: 0;
 }
 
@@ -266,9 +266,9 @@ buttons styling
   display: inline-block;
   transition: all 0.3s ease 0s;
   text-align: center;
-  width: 140px;
 
-  /* height: 42px; */
+  /* width: 140px;
+  height: 42px; */
 }
 
 .button:visited {
@@ -361,7 +361,7 @@ span styling
 ================================= */
 span.bold-white {
   color: #fff;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 span.bold-blue {
@@ -370,8 +370,8 @@ span.bold-blue {
 }
 
 span.bold-grey {
-  font-weight: 400;
-  color: #5a5a5a;
+  font-weight: 500;
+  color: #4f4f66;
 }
 
 span.grey {
@@ -447,7 +447,7 @@ nav styling
 }
 
 nav {
-  font-size: 0.9em;
+  font-size: 0.8em;
 
   /* display: inline-block;
   width: 100%; */
@@ -1018,6 +1018,7 @@ main {
 
 #home-page main {
   padding-top: 0;
+  margin-bottom: 30px;
 }
 
 #about-page main {
@@ -1030,7 +1031,7 @@ main {
 }
 
 #project-page main {
-  margin-bottom: 80px;
+  margin-bottom: 110px;
 }
 
 /* ==============================
@@ -1101,16 +1102,30 @@ p.vertical {
   }
 }
 
+#intro .col-md-6 {
+  width: unset;
+  padding: 0 15px 0 0;
+}
+
+#intro .left {
+  margin-top: 3px;
+}
+
+#intro .right {
+  font-size: 0.7em;
+  font-weight: 200;
+}
+
 /* ==============================
 id: work styling
 ================================= */
 .proj {
-  margin: 70px 0;
+  padding: 70px 0 80px;
+  border-top: 2px solid rgba(187, 187, 187, 0.5);
 }
 
 .border {
   padding-bottom: 80px;
-  border-bottom: 2px solid rgba(187, 187, 187, 0.5);
 }
 
 #work {
@@ -1175,6 +1190,18 @@ sneaker-help project styling
   height: 50px;
   float: left;
   margin-right: 20px;
+}
+
+.illust-left {
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.illust-right {
+  width: 50%;
+  float: right;
+  margin-left: 20px;
 }
 
 .img-pad {
@@ -1449,7 +1476,7 @@ project numbers styling
   height: 90px;
   width: auto;
   left: 0;
-  bottom: 38px;
+  bottom: 59px;
 }
 
 #project-page main .numbers h2 {
@@ -1537,7 +1564,7 @@ small devices (375px and larger)
 ================================= */
 @media only screen and (min-width: 375px) {
   #intro {
-    padding: 280px 0 65px;
+    padding: 305px 0 65px;
   }
 
   p.junior {
@@ -1593,6 +1620,10 @@ medium devices (640px and larger)
     margin-bottom: 60px;
   }
 
+  #project-page main {
+    margin-bottom: 150px;
+  }
+
   header {
     text-align: unset;
     padding: 10px 0;
@@ -1624,7 +1655,7 @@ medium devices (640px and larger)
   } */
 
   body {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .logo {
@@ -1633,7 +1664,15 @@ medium devices (640px and larger)
   }
 
   #intro {
-    padding: 400px 30px 200px;
+    padding: 350px 30px 200px;
+  }
+
+  #intro .left {
+    margin-top: 8px;
+  }
+
+  #intro .right {
+    font-size: 0.8em;
   }
 
   p.junior {
@@ -1692,6 +1731,7 @@ medium devices (640px and larger)
 
   #project-page main .numbers img {
     height: 100px;
+    bottom: 61px;
   }
 
   ol {
@@ -1716,18 +1756,17 @@ medium devices (640px and larger)
   }
 
   .proj {
-    margin: 70px 0 80px;
+    padding: 100px 0 90px;
   }
 
   .border {
     margin-top: 30px;
-    padding-bottom: 70px;
-    border-bottom: 2px solid rgba(187, 187, 187, 0.5);
+    padding-bottom: 90px;
   }
 
   #work {
     background-image: linear-gradient(rgba(2, 2, 22, 1), rgba(4, 4, 33, 0.8), rgba(5, 4, 41, 0.6), rgba(5, 4, 38, 0.4), rgba(8, 7, 63, 0.2));
-    padding: 150px 0 65px;
+    padding: 150px 0 0;
   }
 
   [class*="col-"] {
@@ -1836,7 +1875,7 @@ large devices (1024px or larger)
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 
   nav a {
@@ -1882,6 +1921,24 @@ large devices (1024px or larger)
     width: 50%;
   }
 
+  #intro .col-md-6 {
+    width: unset;
+    padding: 0 15px 0 0;
+  }
+
+  #intro .left {
+    margin-top: 10px;
+  }
+
+  #intro .right {
+    font-size: 0.6em;
+    font-weight: 200;
+  }
+
+  p.vertical {
+    bottom: 100px;
+  }
+
   .img-end {
     max-width: 400px;
   }
@@ -1898,6 +1955,7 @@ large devices (1024px or larger)
 
   #project-page main .numbers img {
     height: 110px;
+    bottom: 63px;
   }
 
   .img-no2 {
@@ -1905,12 +1963,15 @@ large devices (1024px or larger)
   }
 
   .proj {
-    margin: 100px 0;
+    padding: 100px 0 90px;
+    border-top: 2px solid rgba(187, 187, 187, 0.5);
+
+    /* margin: 100px 0; */
   }
 
   .border {
     margin-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
 
   #work {
@@ -1918,7 +1979,7 @@ large devices (1024px or larger)
   }
 
   #intro {
-    padding: 300px 0 150px;
+    padding: 200px 0 150px;
   }
 
   p.junior {
