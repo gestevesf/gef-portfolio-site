@@ -84,7 +84,7 @@ h4 {
 #project-page h2 {
   font-size: 1.9em;
   font-weight: 800;
-  padding: 200px 0 25px;
+  padding: 250px 0 50px;
   margin: 0;
 }
 
@@ -370,8 +370,8 @@ span.bold-blue {
 }
 
 span.bold-grey {
-  font-weight: 400;
-  color: #5a5a5a;
+  font-weight: 500;
+  color: #4f4f66;
 }
 
 span.grey {
@@ -1178,6 +1178,18 @@ sneaker-help project styling
   margin-right: 20px;
 }
 
+.illust-left {
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.illust-right {
+  width: 50%;
+  float: right;
+  margin-left: 20px;
+}
+
 .img-pad {
   margin-top: 20px;
 }
@@ -1450,7 +1462,7 @@ project numbers styling
   height: 90px;
   width: auto;
   left: 0;
-  bottom: 38px;
+  bottom: 59px;
 }
 
 #project-page main .numbers h2 {
@@ -1697,6 +1709,7 @@ medium devices (640px and larger)
 
   #project-page main .numbers img {
     height: 100px;
+    bottom: 61px;
   }
 
   ol {
@@ -1902,6 +1915,7 @@ large devices (1024px or larger)
 
   #project-page main .numbers img {
     height: 110px;
+    bottom: 63px;
   }
 
   .img-no2 {
