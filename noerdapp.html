@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Gonçalo Esteves Ferreira">
+  <meta name="description" content="UX Designer Portfolio. Includes worked projects, information about myself, and contacts to reach me easily">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nœrd Kantine App Case Study</title>
+  <script src="https://kit.fontawesome.com/854137a145.js" crossorigin="anonymous"></script>
+  <link href="img/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C2JG3CJ6SJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C2JG3CJ6SJ');
+</script>
+
+<body id="project-page">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+
+          <div class="mobile-menu navtoggle" id="myNavtoggle">
+            <a href="index.html">
+              <img class="logo" src="img/gef-logo.svg" alt="logo Gonçalo Esteves Ferreira">
+            </a>
+            <nav class="cd-stretchy-nav">
+              <a class="cd-nav-trigger" href="#0">
+                <span aria-hidden="true"></span>
+              </a>
+              <ul class="navigation">
+                <li><a href="index.html#work" onclick="menuToggle()">work</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="#contact" onclick="menuToggle()">contact</a></li>
+                <li><a href="files/ferreira.goncalo_resume.pdf" target="_blank">resume</a></li>
+                <!--<li><a href="javascript:void(0);" class="head-icon" onclick="menuToggle()"><i class="fas fa-bars fa-lg"></i></a></li> -->
+              </ul>
+              <span aria-hidden="true" class="stretchy-nav-bg"></span>
+            </nav>
+          </div>
+
+          <div class="desktop-menu">
+            <nav>
+              <ul class="navigation">
+                <li><a href="index.html#work">work</a></li>
+                <li><a href="about.html">about me</a></li>
+              </ul>
+              <a href="index.html">
+                <img src="img/gef-logo.svg" alt="logo Gonçalo Esteves Ferreira" class="logo">
+              </a>
+              <ul class="navigation">
+                <li><a href="#contact">contact</a></li>
+                <li><a href="files/ferreira.goncalo_resume.pdf" target="_blank">resume</a></li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+
+    <nav id= "sctnNav" class="section-nav">
+      <ol>
+        <li><a href="#section-0">Overview</a></li>
+        <li><a href="#section-1">New Features</a></li>
+        <li><a href="#section-2">New Looks</a></li>
+        <li><a href="#section-3">Final Thoughts</a></li>
+      </ol>
+    </nav>
+
+
+
+    <div class="section-top">
+        <div class="row">
+          <div class="column">
+            <picture>
+              <source srcset="img/mobile/7_noerdapp/header-background.jpg" media="(max-width: 767px)">
+              <img src="img/desktop/7_noerdapp/header-background.jpg" alt="Noerd's App Header">
+            </picture>
+          </div>
+        </div>
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h1>Nœrd Kantine’s App that allows for easy purchases and weekly menu preview</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Table of contents</h3>
+            <ol class="table">
+              <li><a href="#section-0">Overview</a></li>
+              <li><a href="#section-1">New Features</a></li>
+              <li><a href="#section-2">New Looks</a></li>
+              <li><a href="#section-3">Final Thoughts</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-0">
+      <div class="container">
+        <div class="row">
+          <div class="column numbers">
+            <img src="img/svg-numbers/00.svg" alt="00 number">
+            <h2>Overview</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Summary</h3>
+            <p>The Nœrd Kantine’s application is a mobile app designed to make it easier for customers to purchase items and check the week’s daily menus. It allows customers to charge their account with money, which they can then use to purchase items or pay for their lunch in the canteen.</p>
+            <h3>Challenge</h3>
+            <p>The main challenge was to redesign the app so it could be easier to use, visually appealing, and could handle the transactional nature of the canteen environment.</p>
+            <h3>Solution</h3>
+            <p>I decided to redesign a new version of the canteen application that was more modern and user-friendly. I opted for a tab bar design that would allow users to access any part of the app at any time during their journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-1">
+      <div class="container">
+        <div class="row">
+          <div class="column numbers">
+            <img src="img/svg-numbers/01.svg" alt="01 number">
+            <h2>New Features</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Tab Bar</h3>
+            <p>With a new tab bar on the bottom customers can easily access any point of the app with only one tap instead of two, without loosing visibility over the screen.</p>
+            <h3>Charge Account</h3>
+            <p>This feature allows customers to add money to their account using a credit or debit card. The customers can also view their and current balance and transaction history. As it is the most important features of the app, I spent more time looking into a more intuitive way for the users to accomplish this step.</p>
+            <h3>Daily Menus</h3>
+            <p>The app provides customers with the daily menus for the entire week. Which before the app only had a link that redirected the users to the website’s canteen, making them leaving the app.</p>
+            <h3>Profile</h3>
+            <p>Customers can manage their profile information, including their name, email address, and password. Which is now more organized and visually aligned with the rest of the app.</p>
+            <h3>News</h3>
+            <p>Customers can view new information, special days or closing days and new deals by the canteen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-2">
+      <div class="container">
+        <div class="row">
+          <div class="column numbers">
+            <img src="img/svg-numbers/02.svg" alt="02 number">
+            <h2>New Looks</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Design</h3>
+            <p>I wanted the app to be visually appealing and user-friendly. I kept the same palette that already had a clean and modern design. The tab bar design makes it easy for users to navigate the app, and the large buttons and clear font make it easy for users to understand the functionality.</p>
+            <picture>
+              <source srcset="img/mobile/7_noerdapp/design-imgs.png" media="(max-width: 767px)">
+              <img src="img/desktop/7_noerdapp/design-imgs.png" alt="New App Screens">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-3">
+      <div class="container">
+        <div class="row">
+          <div class="column numbers">
+            <img src="img/svg-numbers/03.svg" alt="03 number">
+            <h2>Final Thoughts</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Next Steps</h3>
+            <ol>
+              <li>Adding and displaying nutritional and allergen information for each dish in the menu tab will give the users better information to their decisions.</li>
+              <li>Customers will be able to order food directly from the app. They will be able to select their desired items and pay for them using the funds in their account. The app would also provides an estimated time for the order to be ready for pickup.</li>
+              <li>Customers will be able to view their order history, including the items they ordered, the price, and the date and time of the order.</li>
+            </ol>
+            <h3>Conclusion</h3>
+            <p>The canteen application is an excellent example of how a mobile app can improve the customer experience in a transactional environment, in my opinion. By re-designing the app, it is now easier to use and visually appealing, customers are more likely to use it more often without needing the staff’s help.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-end">
+      <div class="container">
+        <div class="row-line">
+          <div class="column-end">
+            <h3>Thanks a lot for scrolling until the end!</h3>
+            <p>I would love to hear your feedback, so please don’t hesitate to write me at <span class="bold-blue">g.estevesferreira@gmail.com</span></p>
+            <picture>
+              <source srcset="img/mobile/7_noerdapp/noerd-logo.jpg" media="(max-width: 767px)">
+              <img src="img/desktop/7_noerdapp/noerd-logo.jpg" alt="Noerd Kantine Logo" class="img-end">
+            </picture>
+            <p class="center">by</p>
+            <picture>
+              <source srcset="img/mobile/7_noerdapp/signature.png" media="(max-width: 767px)">
+              <img src="img/desktop/7_noerdapp/signature.png" alt="My Signature" class="img-end">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <h2>Want to get in touch?</h2>
+          <p><span class="bold-white">If you’d like to discuss more, share feedback, or ask any questions, please just reach me at:</span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer-buttons">
+          <a href="mailto:g.estevesferreira@gmail.com?" class="button email"><i class="fas fa-envelope-square"></i> email</a>
+          <a href="https://www.linkedin.com/in/gestevesf/" target="_blank" class="button soc"><i class="fab fa-linkedin"></i><span class="social"> linkedin</span></a>
+          <a href="https://www.behance.net/gestevesf" target="_blank" class="button soc"><i class="fab fa-behance-square"></i><span class="social"> bēhance</span></a>
+          <a href="https://github.com/gestevesf" target="_blank" class="button soc"><i class="fab fa-github-square"></i><span class="social"> github</span></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p class="copyright">I designed and coded this website from scratch. <i class="far fa-copyright"></i> Copyright 2021 by Gonçalo Ferreira</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
